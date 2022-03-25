@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vowels Counter App</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Vowels Counter App</h1>
+  <p class="desc">made by <a href="https://www.instagram.com/hafidzrdwn/" target="_blank">Hafidzrdwn</a></p>
+  <a id="btn-info" href="https://github.com/Hafidzrdwn" target="_blank"><i class="fa-brands fa-github"></i></a>
+  <div class="container">
+    <div class="result-box">
+      <div class="total-vowels-container">
+        <p id="total" class="total-vowels">0</p>
+        <span>Vowel</span>
+      </div>
+      <div class="total-single-container">
+        <div id="vowel-box-a" class="vowel-box">
+          <span>A</span>
+          <p id="v-a">0</p>
+        </div>
+        <div id="vowel-box-i" class="vowel-box">
+          <span>I</span>
+          <p id="v-i">0</p>
+        </div>
+        <div id="vowel-box-u" class="vowel-box">
+          <span>U</span>
+          <p id="v-u">0</p>
+        </div>
+        <div id="vowel-box-e" class="vowel-box">
+          <span>E</span>
+          <p id="v-e">0</p>
+        </div>
+        <div id="vowel-box-o" class="vowel-box">
+          <span>O</span>
+          <p id="v-o">0</p>
+        </div>
+        <div class="vowel-box letter-count">
+          <p id="letters">0</p>
+          <span>letter</span>
+        </div>
+      </div>
+    </div>
+    <div class="input-box">
+      <div class="textarea-box">
+        <span id="limit-char"></span>
+        <button id="btn-reset" onclick="reset(this)"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+        <textarea id="words" placeholder="Type a sentence" autocomplete="off"></textarea>
+        <div class="fake-textarea"></div>
+      </div>
+    </div>
+  </div>
+  <div class="background-shape"></div>
+</body>
+<script src="https://kit.fontawesome.com/08096d59b2.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
